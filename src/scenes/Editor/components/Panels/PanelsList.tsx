@@ -5,7 +5,10 @@ import PanelListItem from './PanelListItem'
 
 const Container = styled('div', props => ({
   width: '84px',
-  backgroundColor: props.$theme.colors.primary100,
+  backgroundColor: '#2c3e50', // Darker, more modern background
+  borderRight: '1px solid rgba(255,255,255,0.1)',
+  position: 'relative',
+  zIndex: 10,
 }))
 
 function PanelsList() {
