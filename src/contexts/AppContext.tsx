@@ -23,7 +23,7 @@ export const AppContext = createContext<IAppContext>({
   setTemplates: () => {},
   shapes: [],
   setShapes: () => {},
-  activePanel: PanelType.TEMPLATES,
+  activePanel: PanelType.STICKERS,
   setActivePanel: () => {},
   activeSubMenu: null,
   setActiveSubMenu: (value: SubMenuType) => {},
@@ -33,7 +33,7 @@ export const AppProvider: FC = ({ children }) => {
   const [isMobile, setIsMobile] = useState<boolean>(undefined)
   const [templates, setTemplates] = useState<Template[]>([])
   const [shapes, setShapes] = useState<Template[]>([])
-  const [activePanel, setActivePanel] = useState<PanelType>(PanelType.TEMPLATES)
+  const [activePanel, setActivePanel] = useState<PanelType>(PanelType.STICKERS)
   const [activeSubMenu, setActiveSubMenu] = useState<SubMenuType | null>(null)
   const context = {
     isMobile,

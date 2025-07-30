@@ -8,7 +8,10 @@ const Container = styled('div', props => ({
   background: '#ffffff',
   width: '360px',
   flex: 'none',
-  boxShadow: '1px 0px 1px rgba(0, 0, 0, 0.15)',
+  boxShadow: '2px 0px 8px rgba(0, 0, 0, 0.1)',
+  borderRight: '1px solid #e9ecef',
+  position: 'relative',
+  zIndex: 5,
 }))
 
 function PanelsList() {
